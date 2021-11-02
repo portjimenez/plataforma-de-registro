@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.principal {
+    height: 100vh;
+    width: 100%;
+    background: url(./recurso/FONDO1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+form {
+    /* margin: 70px; */
+    display: flex;
+    flex-flow: column;
+    background: rgba(256, 256, 256, 0.6);
+    width: 28%;
+    height: 40%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 50px;
+
+}
+
+
+.fas{
+    margin-right: 8px;
+}
+
+
+/* ----------------boton-------------------------- */
+.btn-grad {
+    background-image: linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 20px;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.07);
+}
+
+
+/* ------------titulo form------------------ */
+.instruccion{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    text-align: center;
+    color: #333333;
+}
+
+.nota{
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+}
+
+/* --------------mitad dos imagenes----------- */
+
+.images{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.images .logo{
+
+    width: 350px;
+}
+
+.logo{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1366px){
+    .images .logo{
+
+        width: 300px;
+    }
+
+    .images .seminario{
+
+        width: 450px;
+    }
+
+    .instruccion{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .images .logo{
+
+        width: 250px
+    }
+    .images .seminario{
+
+        width: 330px;
+    }
+
+    .instruccion{
+        font-size: 15px;
+    }
+
+    input{
+        width: 50%;
+    }
+
+    .btn-grad{
+        font-size: 14px;
+        padding: 14px 45px;   
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .principal{
+        flex-direction: column-reverse;
+    }
+
+    form{
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .images .logo{
+
+        width: 200px
+    }
+    .images .seminario{
+
+        width: 280px;
+    }
+
+    .instruccion{
+        font-weight: 400;
+    }
+
+    form{
+        width: 80%;
+    }
+}
